@@ -16,14 +16,14 @@ public class Streaming {
     private String nombre;
     private int precio;
     private String calificación;
-    private Date fecha;
+    private int fecha;
     private String empresas;
     private ArrayList<Productos> productos = new ArrayList();
 
     public Streaming() {
     }
 
-    public Streaming(String nombre, int precio, String calificación, Date fecha, String empresas) {
+    public Streaming(String nombre, int precio, String calificación, int fecha, String empresas) {
         this.nombre = nombre;
         this.precio = precio;
         this.calificación = calificación;
@@ -55,11 +55,11 @@ public class Streaming {
         this.calificación = calificación;
     }
 
-    public Date getFecha() {
+    public int getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(int fecha) {
         this.fecha = fecha;
     }
 
@@ -81,7 +81,7 @@ public class Streaming {
 
     @Override
     public String toString() {
-        return "Streaming{" + "nombre=" + nombre + ", precio=" + precio + ", calificaci\u00f3n=" + calificación + ", fecha=" + fecha + ", empresas=" + empresas + ", productos=" + productos + '}';
+        return  nombre ;
     }
     
 }
