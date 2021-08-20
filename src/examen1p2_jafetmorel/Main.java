@@ -133,7 +133,34 @@ public class Main extends javax.swing.JFrame {
         jComboBox6 = new javax.swing.JComboBox<>();
         jLabel40 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
+        tf_nombreser = new javax.swing.JTextField();
+        tf_calificacion = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jb_crearser = new javax.swing.JButton();
+        jLabel44 = new javax.swing.JLabel();
+        jComboBox7 = new javax.swing.JComboBox<>();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        date_serie = new com.toedter.calendar.JDateChooser();
+        tf_tempser = new javax.swing.JTextField();
+        tf_actores = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
+        tf_nombremini = new javax.swing.JTextField();
+        tf_duracionmini = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        ta_desc = new javax.swing.JTextArea();
+        jLabel49 = new javax.swing.JLabel();
+        jb_crearpel2 = new javax.swing.JButton();
+        jLabel50 = new javax.swing.JLabel();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        tf_tempmini = new javax.swing.JTextField();
+        tf_genero = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -335,6 +362,11 @@ public class Main extends javax.swing.JFrame {
         jLabel14.setText("Miniseries");
 
         jButton2.setText("Subscribirse");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -580,7 +612,7 @@ public class Main extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap(469, Short.MAX_VALUE)
+                .addContainerGap(539, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -601,7 +633,7 @@ public class Main extends javax.swing.JFrame {
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel30)
                                 .addComponent(jLabel36))
-                            .addContainerGap(556, Short.MAX_VALUE))
+                            .addContainerGap(626, Short.MAX_VALUE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel34)
@@ -669,7 +701,7 @@ public class Main extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGap(0, 982, Short.MAX_VALUE)
             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel5Layout.createSequentialGroup()
                     .addGap(271, 271, 271)
@@ -699,7 +731,7 @@ public class Main extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createSequentialGroup()
                             .addGap(139, 139, 139)
                             .addComponent(jb_crear)))
-                    .addContainerGap(325, Short.MAX_VALUE)))
+                    .addContainerGap(395, Short.MAX_VALUE)))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -835,31 +867,190 @@ public class Main extends javax.swing.JFrame {
 
         crear.addTab("Peliculas", jPanel7);
 
+        tf_nombreser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_nombreserActionPerformed(evt);
+            }
+        });
+
+        jLabel41.setText("Nombre");
+
+        jLabel42.setText("Temporadas");
+
+        jLabel43.setText("Calificación");
+
+        jb_crearser.setText("Crear");
+        jb_crearser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_crearserActionPerformed(evt);
+            }
+        });
+
+        jLabel44.setText("Fecha de lanzamiento");
+
+        jLabel45.setText("Cantidad de actores");
+
+        jLabel46.setText("Servicio al que desea agregarlo");
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(215, 215, 215)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel45)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel41))
+                .addGap(47, 47, 47)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(tf_nombreser, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_tempser, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel46)
+                            .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(71, 71, 71))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(tf_calificacion)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel8Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jb_crearser))
+                            .addComponent(date_serie, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
+                            .addComponent(tf_actores, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 398, Short.MAX_VALUE)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel46)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(tf_nombreser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(tf_tempser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel43)
+                    .addComponent(tf_calificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel44)
+                    .addComponent(date_serie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel45)
+                        .addGap(98, 98, 98)
+                        .addComponent(jb_crearser))
+                    .addComponent(tf_actores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
-        crear.addTab("tab4", jPanel8);
+        crear.addTab("Series", jPanel8);
+
+        tf_nombremini.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_nombreminiActionPerformed(evt);
+            }
+        });
+
+        jLabel47.setText("Nombre");
+
+        jLabel48.setText("Temporadas");
+
+        ta_desc.setColumns(20);
+        ta_desc.setRows(5);
+        jScrollPane8.setViewportView(ta_desc);
+
+        jLabel49.setText("Genero");
+
+        jb_crearpel2.setText("Crear");
+        jb_crearpel2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_crearpel2ActionPerformed(evt);
+            }
+        });
+
+        jLabel50.setText("Duración por epidodio en minutos");
+
+        jLabel51.setText("Descripción");
+
+        jLabel52.setText("Servicio al que desea agregarlo");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(215, 215, 215)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel51)
+                    .addComponent(jLabel50)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel48)
+                    .addComponent(jLabel47))
+                .addGap(47, 47, 47)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane8)
+                            .addComponent(tf_nombremini)
+                            .addComponent(tf_duracionmini)
+                            .addComponent(tf_tempmini, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(tf_genero, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(110, 110, 110)
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel52)
+                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(71, 71, 71))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jb_crearpel2)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 398, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel52)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(tf_nombremini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(tf_tempmini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(tf_genero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(tf_duracionmini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel51)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jb_crearpel2)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
-        crear.addTab("tab5", jPanel9);
+        crear.addTab("Mini series", jPanel9);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1063,7 +1254,14 @@ public class Main extends javax.swing.JFrame {
 
     private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
         // TODO add your handling code here:        
-        if(jTabbedPane1.getSelectedIndex()==1){
+        if(jTabbedPane1.getSelectedIndex()==0){
+            DefaultComboBoxModel model = (DefaultComboBoxModel) jComboBox2.getModel();
+            for (Streaming streaming : s) {
+                model.addElement(s);
+            }
+            jComboBox2.setModel(model);
+        }
+        else if(jTabbedPane1.getSelectedIndex()==1){
             DefaultTableModel model = (DefaultTableModel) table_servicios.getModel();
             for (int i = 0; i < u.get(pos).getLista().size(); i++) {
                 Object[]row = {u.get(pos).getLista().get(i).getNombre(),u.get(pos).getLista().get(i).getPrecio(),u.get(pos).getLista().get(i).getCalificación(),u.get(pos).getLista().get(i).getFecha(),u.get(pos).getLista().get(i).getEmpresas()};
@@ -1143,8 +1341,56 @@ public class Main extends javax.swing.JFrame {
                 model.addElement(s);
             }
             jComboBox6.setModel(model);
+        }else if(crear.getSelectedIndex()==3){
+            DefaultComboBoxModel model = (DefaultComboBoxModel) jComboBox7.getModel();
+            for (Streaming streaming : s) {
+                model.addElement(s);
+            }
+            jComboBox7.setModel(model);
+        }else if(crear.getSelectedIndex()==4){
+            DefaultComboBoxModel model = (DefaultComboBoxModel) jComboBox8.getModel();
+            for (Streaming streaming : s) {
+                model.addElement(s);
+            }
+            jComboBox8.setModel(model);
         }
     }//GEN-LAST:event_crearStateChanged
+
+    private void tf_nombreserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_nombreserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_nombreserActionPerformed
+
+    private void jb_crearserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_crearserActionPerformed
+        // TODO add your handling code here:
+        int x = jComboBox7.getSelectedIndex();
+        s.get(x).getProductos().add(new Series(Integer.parseInt(tf_tempser.getText()),tf_calificacion.getText(),date_serie.getDate(),Integer.parseInt(tf_actores.getText()),tf_nombreser.getText()));
+        tf_tempser.setText("");
+        tf_calificacion.setText("");
+        date_serie.setDate(new Date());
+        tf_actores.setText("");
+        tf_nombreser.setText("");
+    }//GEN-LAST:event_jb_crearserActionPerformed
+
+    private void tf_nombreminiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_nombreminiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_nombreminiActionPerformed
+
+    private void jb_crearpel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_crearpel2ActionPerformed
+        // TODO add your handling code here:
+        int x = jComboBox8.getSelectedIndex();
+        s.get(x).getProductos().add(new Miniseries(Integer.parseInt(tf_tempmini.getText()),tf_genero.getText(),Integer.parseInt(tf_duracionmini.getText()),ta_desc.getText(),tf_nombremini.getText()));
+        tf_tempmini.setText("");
+        tf_genero.setText("");
+        tf_duracionmini.setText("");
+        ta_desc.setText("");
+        tf_nombremini.setText("");
+    }//GEN-LAST:event_jb_crearpel2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Streaming ss = (Streaming)jComboBox2.getSelectedItem();
+        u.get(pos).getLista().add(ss);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1204,6 +1450,7 @@ public class Main extends javax.swing.JFrame {
     private com.toedter.calendar.JYearChooser añostr;
     private javax.swing.JTabbedPane crear;
     private com.toedter.calendar.JDateChooser date_salas;
+    private com.toedter.calendar.JDateChooser date_serie;
     private com.toedter.calendar.JDateChooser date_streaming;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -1213,6 +1460,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1248,7 +1497,19 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1268,9 +1529,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JButton jb_crear;
     private javax.swing.JButton jb_crearpel;
+    private javax.swing.JButton jb_crearpel2;
+    private javax.swing.JButton jb_crearser;
     private javax.swing.JButton jb_crearss;
     private javax.swing.JButton jb_login;
     private javax.swing.JButton jb_mod;
@@ -1278,6 +1542,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog jd_registro;
     private javax.swing.JDialog jd_sistema;
     private javax.swing.JLabel label_nuevo;
+    private javax.swing.JTextArea ta_desc;
     private javax.swing.JTextArea ta_plot;
     private javax.swing.JTabbedPane tabbedpane;
     private javax.swing.JTable table_infomini;
@@ -1285,18 +1550,24 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTable table_infoser;
     private javax.swing.JTable table_infostr;
     private javax.swing.JTable table_servicios;
+    private javax.swing.JTextField tf_actores;
     private javax.swing.JTextField tf_apellido;
     private javax.swing.JTextField tf_apellidoad;
     private javax.swing.JTextField tf_apellidomod;
+    private javax.swing.JTextField tf_calificacion;
+    private javax.swing.JTextField tf_duracionmini;
     private javax.swing.JTextField tf_duracionpel;
     private javax.swing.JTextField tf_email;
     private javax.swing.JTextField tf_emailad;
     private javax.swing.JTextField tf_emailmod;
     private javax.swing.JTextField tf_empresa;
+    private javax.swing.JTextField tf_genero;
     private javax.swing.JTextField tf_nombre;
     private javax.swing.JTextField tf_nombread;
+    private javax.swing.JTextField tf_nombremini;
     private javax.swing.JTextField tf_nombremod;
     private javax.swing.JTextField tf_nombrepel;
+    private javax.swing.JTextField tf_nombreser;
     private javax.swing.JTextField tf_nombrestr;
     private javax.swing.JTextField tf_numero;
     private javax.swing.JTextField tf_numeroad;
@@ -1306,6 +1577,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tf_pwad;
     private javax.swing.JTextField tf_pwmod;
     private javax.swing.JTextField tf_pwn;
+    private javax.swing.JTextField tf_tempmini;
+    private javax.swing.JTextField tf_tempser;
     private javax.swing.JTextField tf_user;
     private javax.swing.JTextField tf_userad;
     private javax.swing.JTextField tf_usermod;
